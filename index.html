@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet">
         <title>Survey Form</title>
     </head>
     <body>
@@ -10,27 +11,36 @@
         </h1>
         <p id="description">School Happines Survey</p>
         <form id="survey-form">
-            <div>
-                <label id="name-label" for="name">Name</label>
-                <input type="text" name="name" id="name" required="">
+            <div id="info">
+                <div id="info-inner">
+                    <label id="name-label" for="name">Name</label>
+                    <div class="personal-info">
+                        <input type="text" name="name" id="name" required="" placeholder="Your name">
+                    </div>
+                    
+                    <label id="email-label" for="mail">E-mail</label>
+                    <div class="personal-info">
+                        <input type="text" name="mail" id="mail" required="" placeholder="Your email">
+                    </div>
+
+                    <label id="id-label" for="number">ID</label>
+                    <div class="personal-info">
+                        <input type="text" name="number" id="number" required="" placeholder="Your ID">
+                    </div>
+                </div>
             </div>
             <div>
-                <label id="email-label" for="mail">e-mail</label>
-                <input type="text" name="mail" id="mail" required="">
-            </div>
-            <div>
-                <label id="number-label" for="number">number</label>
-                <input type="text" name="number" id="number" required="">
-            </div>
-            <div>
-                <select id="dropdown" name="role" required="">
-                    <option disabled="" selected="" value="">Select current role</option>
-                    <option value="student">Student</option>
-                    <option value="job">Full Time Job</option>
-                    <option value="learner">Full Time Learner</option>
-                    <option value="preferNo">Prefer not to say</option>
-                    <option value="other">Other</option>
-                </select>
+                <label for="role">What is your current role in the school</label>
+                <div>
+                    <select id="dropdown" name="role" required="">
+                        <option disabled="" selected="" value="">Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
             </div>
             <div>
                 <p>Would you recommend our school to a friend?</p>
@@ -53,18 +63,20 @@
                   <option value="openSource">Campus</option>
                 </select>
             </div>
-            <div>
-                <p>
-                  What would you like to see improved?
-                </p>        
-                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Teachers</label>
-                <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Classrooms</label>
-                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Lecture material</label>
-                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Campus</label>
-                <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Labs</label>
-                <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Library</label>
-                <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Social Activities</label>
-                <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label>
+            <div id="improved-parent">
+                <div class="improved">
+                    <p>
+                    What would you like to see improved?
+                    </p>        
+                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Teachers</label><br>
+                    <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Classrooms</label><br>
+                    <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Lecture material</label><br>
+                    <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Campus</label><br>
+                    <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Labs</label><br>
+                    <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Library</label><br>
+                    <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Social Activities</label><br>
+                    <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label><br>
+                </div>
             </div>
             <div>
                 <p>Any comments or suggestions?</p>

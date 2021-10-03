@@ -1,0 +1,52 @@
+html {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info{
+    margin-bottom: 1.2em;
+}
+
+.personal-info{
+    margin-bottom: 1em;
+}
+
+/* 
+#description{
+    text-align: center;
+}
+
+.improved{
+    display: inline-block;
+    justify-content: left;
+}
+
+#improved-parent{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+#info-inner{
+    display: inline-block;
+    justify-content: left;
+}
+
+#role{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+} */

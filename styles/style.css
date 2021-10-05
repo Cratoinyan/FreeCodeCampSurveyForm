@@ -1,15 +1,33 @@
 html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(115deg, rgba(112, 73, 112, 0.7), #c66ae8ce), 
+                      url("../images/image2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body{
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: linear-gradient(#b53ee1bb, #a6acf0);
+    border-radius: 1%;
+    border-style: groove;
+    border-color: rgba(99, 14, 211, 0.5);
+    opacity: 0.8;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+input{
+    height: 2.4em;
+    border-radius: 0.3em;
 }
 
 #info{
@@ -18,35 +36,49 @@ body{
 
 .personal-info{
     margin-bottom: 1em;
-}
-
-/* 
-#description{
-    text-align: center;
-}
-
-.improved{
-    display: inline-block;
-    justify-content: left;
-}
-
-#improved-parent{
-    width: 200px;
-    margin: 0 auto;
-    display: block;
-}
-
-
-
-
-#info-inner{
-    display: inline-block;
-    justify-content: left;
-}
-
-#role{
     display: flex;
-    width: fit-content;
     flex-direction: column;
-    align-items: center;
-} */
+    justify-content: center;
+}
+
+#dropdown{
+    width: 33.5em;
+    height: 2.7em;
+    border-radius: 0.3em;
+}
+
+input[name="user-recommend"]{
+    vertical-align: -0.6em;
+}
+
+#most-like{
+    width: 33.5em;
+    height: 2.7em;
+    border-radius: 0.3em;
+}
+
+#fav-feature{
+    margin-top:  2em;
+    margin-bottom: 2em;
+}
+
+
+.input-checkbox{
+    vertical-align: -0.6em;
+}
+
+textarea{
+    width: 33.5em;
+    height: 2.7em;
+    border-radius: 0.3em;
+}
+
+#submit-div{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button{
+    width: 20em;
+    height: 2em;
+}

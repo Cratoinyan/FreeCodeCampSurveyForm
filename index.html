@@ -13,9 +13,11 @@
         <form id="survey-form">
             <div id="info">
                 <div id="info-inner">
-                    <label id="name-label" for="name">Name</label>
-                    <div class="personal-info">
-                        <input type="text" name="name" id="name" required="" placeholder="Your name">
+                    <div class="info-button">
+                        <label id="name-label" for="name">Name</label>
+                        <div class="personal-info">
+                            <input type="text" name="name" id="name" required="" placeholder="Your name">
+                        </div>
                     </div>
                     
                     <label id="email-label" for="mail">E-mail</label>
@@ -44,14 +46,25 @@
             </div>
             <div>
                 <p>Would you recommend our school to a friend?</p>
-                <label>
-                  <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
-                <label>
-                  <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                <div>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                    </label>
+                </div>
           
-                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+                <div>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+                    </label>
+                </div>
             </div>
-            <div>
+            <div id="fav-feature">
                 <p>
                   What is your favorite feature of our school?
                 </p>
@@ -82,7 +95,7 @@
                 <p>Any comments or suggestions?</p>
                 <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
             </div>
-            <div>
+            <div id="submit-div">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
         </form>
